@@ -1,0 +1,89 @@
+.back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: rgba(0,0,0, 0.5);
+    visibility: hidden;
+    transition: all .5s;
+}
+.backActive {
+    visibility: visible;
+    transition: all .5s;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 21;
+    background-color: var(--block-color);
+    width: 250px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 15px;
+    animation: slideHome .5s ease-in-out;
+}
+
+@keyframes slideHome {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-101%);}
+}
+
+.menuActive {
+    animation: slideLeft .5s ease-in-out;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-150%);
+    }
+    50%{
+        transform: translateX(-8%);
+    }
+    65%{
+        transform: translateX(4%);
+    }
+    80%{
+        transform: translateX(-4%);
+    }
+    95%{
+        transform: translateX(2%);
+    }           
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+.close {
+    margin-bottom: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: color 0.4s linear;
+}
+.close:hover {
+    color: #f80000;
+    transition: color 0.4s linear;
+}
+.link {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 5px 0 5px 0;
+    width: 100%;
+    border-bottom: 1px solid #bbb;
+    margin-bottom: 5px;
+}
+.link:hover {
+    font-weight: bold;
+}
