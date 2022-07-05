@@ -1,0 +1,19 @@
+.breadcrumbs {
+    display: block;
+    margin: 10px 0 20px 0;
+}
+.breadcrumbs a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+.breadcrumbs a:hover{
+    color: var(--link-color);
+    text-decoration: none;
+}
+.breadcrumbs a::after{
+    content: " / ";
+    color: var(--text-color);
+}
+.breadcrumbs a:last-child:after{
+    content: "";
+}

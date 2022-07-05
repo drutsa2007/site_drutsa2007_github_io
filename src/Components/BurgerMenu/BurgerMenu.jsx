@@ -8,7 +8,7 @@ const BurgerMenu = ({showMenu, setShowMenu}) => {
     <div className={(showMenu) ? style.back : [style.back, style.backActive].join(" ")} onClick={() => {setShowMenu(!showMenu)}}>
       <div className={(showMenu) ? style.menu : [style.menu, style.menuActive].join(" ")} onClick={(e) => {e.stopPropagation()}}>
         <FontAwesomeIcon icon={faXmark} className={style.close} onClick={()=>{setShowMenu(!showMenu)}}/>
-        <Link to="/" className={style.link}>Ссылка</Link>
+        <Link to="/" className={style.link}>Главная</Link>
         <Link to="/" className={style.link}>Ссылка</Link>
         <Link to="/" className={style.link}>Ссылка</Link>
         <Link to="/" className={style.link}>Ссылка</Link>

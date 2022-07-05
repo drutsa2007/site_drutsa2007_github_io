@@ -1,0 +1,20 @@
+.text {
+    margin-bottom: 20px;
+}
+.command {
+    border: 1px solid #666;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: var(--block-color);
+    margin-bottom: 10px;
+    max-width: 700px;
+}
+.command code{
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    color: #ec6c16;
+}
+.command span{
+    font-style: italic;
+    font-size: 12px;
+}
