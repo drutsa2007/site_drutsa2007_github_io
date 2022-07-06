@@ -1,6 +1,9 @@
 .footer {
     background-color: var(--block-color);
-    padding: 10px;
+    padding: 10px 15px;
     color: var(--text-color);
+    box-sizing: border-box;
+    margin-top: 10px;
+    min-width: 100%;
     transition: all .5s;
 }

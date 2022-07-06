@@ -1,9 +1,9 @@
 import style from './Header.module.css';
-import SwitchTheme from '../../Components/SwitchTheme/SwitchTheme';
+import SwitchTheme from '../../../../Components/SwitchTheme/SwitchTheme';
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faBars} from "@fortawesome/free-solid-svg-icons";
-import BurgerMenu from '../../Components/BurgerMenu/BurgerMenu';
+import BurgerMenu from '../../../../Components/BurgerMenu/BurgerMenu';
 import { useState } from 'react';
 
 const Header = () => {

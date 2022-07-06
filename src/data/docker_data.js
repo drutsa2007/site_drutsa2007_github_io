@@ -4,6 +4,7 @@ const data = [
         caption: "Работа с образами",
         data: [
             ["docker search SEARCH", "поиск в docker hub по значению SEARCH"],
+            ["docker pull IMAGE", "скачать образ"],
             ["docker images", "список локальных образов"],
             ["docker rmi REPOSITORY|IMAGE_ID", "удаляет образ по REPOSITORY или IMAGE_ID"],
             ["docker image inspect IMAGE", "подробная информация об образе"],
@@ -23,9 +24,11 @@ const data = [
             
             ["docker start CONTAINER_ID", "запустит контейнер по идентификатору"],
             ["docker stop CONTAINER_ID", "остановить контейнер по идентификатору"],
+            ["docker restart CONTAINER_ID", "перезапускает контейнер по идентификатору"],
             
             ["docker rm --force CONTAINER_ID", "останавливает и потом удаляет (--force) контейнер по идентификатору"],
             ["docker rm CONTAINER_ID", "удалить остановленный контейнер по идентификатору"],
+            ["docker container prune", "удалить все контейнеры"],
             
             ["docker exec -t -i CONTAINER_ID COMMAND", "зайти в контейнер по идентификатору и запустить команду COMMAND"],
         ]
@@ -36,13 +39,14 @@ const data = [
         data: [
             ["FROM NAME", "Взять имя образа latest"],
             ["FROM NAME:TAG", "Взять имя образа по тэгу"],
-            ["WORKDIR", ""],
+            ["WORKDIR FOLDER", "Создает папку FOLDER и делает ее активной с переходом в нее."],
             ["ADD", ""],
-            ["EXPOSE", ""],
+            ["EXPOSE PORT", "На каком порту запустить"],
             ["ENV", "Переменные окружения"],
             ["RUN set -e", "В случае ошибки при сборке остановить сборку"],
             ["RUN COMMAND [&& COMMAND]", "Запуск команды или нескольких команд (для разделения на строки '&& \\')"],
             ["COPY ./FILE /FILE", "Взять файл рядом лежащий с dockerfile и поместить в корень контейнера"],
+            ["COPY . .", "Скопировать все из текущей локальной папки в текущую в docker."],
             ["CMD ['EXE-FILE', 'PARAMS']", "Выполнить команду"],
             ["docker build -t NAME:TAG .", "Создать образ здесь же(.) с именем и тегом."],
         ]

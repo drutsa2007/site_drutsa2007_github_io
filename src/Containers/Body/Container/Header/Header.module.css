@@ -1,7 +1,14 @@
 .header {
     background-color: var(--block-color);
-    padding: 10px;
+    padding: 10px 15px;
     color: var(--text-color);
+    box-sizing: border-box;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    margin-bottom: 10px;
+    min-width: 100%;
     transition: all .5s;
 }
 .wrap {
@@ -15,16 +22,15 @@
     align-items: center;
 }
 .burger {
-    font-size: 24px;
+    font-size: 20px;
     margin-right: 10px;
     cursor: pointer;
 }
 .logo {
-    font-size: 24px;
+    font-size: 20px;
 }
 .logo a {
     color: var(--text-color);
-    text-decoration: none;
 }
 
 @media (min-width: 576px) {

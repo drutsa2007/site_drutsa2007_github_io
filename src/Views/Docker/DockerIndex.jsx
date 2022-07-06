@@ -9,9 +9,7 @@ const DockerIndex = () => {
       <PageTitle>Содержание</PageTitle>
       {data.map((item, idx) => 
         <div key={idx} className={style.links}>
-          <Link to={`/docker/${item.name.toLowerCase()}`} className={style.link}>
-            {item.caption}
-          </Link>
+          <Link to={`/docker/${item.name.toLowerCase()}`}>{item.caption}</Link>
         </div>
       )}
     </div>

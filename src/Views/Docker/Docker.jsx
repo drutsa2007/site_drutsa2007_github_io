@@ -1,14 +1,14 @@
 //import style from './Docker.module.css';
-import Container from "../../Layouts/Container";
+import Body from "../../Containers/Body/Body";
 import {Outlet} from "react-router-dom";
 import Breadcrumbs from '../../Components/Breadcrumbs/Breadcrumbs';
 
 const Docker = () => {
   return (
-    <Container>
+    <Body>
       <Breadcrumbs/>
       <Outlet />
-    </Container>
+    </Body>
   );
 }
 

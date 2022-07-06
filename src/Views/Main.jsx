@@ -1,4 +1,4 @@
-import Container from '../Layouts/Container';
+import Body from '../Containers/Body/Body';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faDocker, faGitAlt, faLaravel, faReact, faVuejs, faBootstrap, faChrome,
 faCss3Alt, faHtml5, faJira, faJs, faLinux, faPhp, faPython} from "@fortawesome/free-brands-svg-icons";
@@ -22,10 +22,40 @@ const brands = [
   {url: '/php', icon: faPhp},
   {url: '/python', icon: faPython},
 ]
+const techno = [
+  {url: '/rabbitmq', name: "RabbitMQ"},
+  {url: '/kafka', name: "Kafka"},
+  {url: '/postgresql', name: "PostgreSQL"},
+  {url: '/mysql', name: "MySQL"},
+  {url: '/redis', name: "Redis"},
+  {url: '/mongodb', name: "MongoDB"},
+  {url: '/reactnative', name: "React Native"},
+  {url: '/kotlin', name: "Kotlin"},
+  {url: '/nginx', name: "Nginx"},
+  {url: '/ngrok', name: "Ngrok"},
+  {url: '/graphql', name: "GraphQL"},
+  {url: '/restapi', name: "REST API"},
+  {url: '/swagger', name: "Swagger"},
+  {url: '/websockets', name: "WebSockets"},
+  {url: '/http', name: "HTTP"},
+  {url: '/tcpip', name: "TCP/IP"},
+  {url: '/scss', name: "SCSS"},
+  {url: '/sass', name: "SASS"},
+  {url: '/django', name: "Django"},
+  {url: '/drf', name: "DRF"},
+  {url: '/flask', name: "Flask"},
+  {url: '/typescript', name: "TypeScript"},
+  {url: '/clickhouse', name: "ClickHouse"},
+  {url: '/three', name: "Three.js"},
+  {url: '/flutter', name: "Flutter"},
+  {url: '/jquery', name: "JQuery"},
+  {url: '/webpack', name: "Webpack"},
+  {url: '/bebel', name: "Bebel"},
+]
 
 const Main = () => {
   return (
-    <Container>
+    <Body>
       <div className={style.icons}>
         {brands.map((item, idx) => 
           <Link key={idx} to={item.url}>
@@ -33,7 +63,14 @@ const Main = () => {
           </Link>
         )}
       </div>
-    </Container>
+      <div className={style.technos}>
+        {techno.map((item, idx) => 
+          <Link key={idx} to={item.url} className={style.techno}>
+            {item.name}
+          </Link>
+        )}
+      </div>
+    </Body>
   );
 }
 

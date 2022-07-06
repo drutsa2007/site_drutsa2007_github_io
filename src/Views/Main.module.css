@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 20px;
 }
 .icon {
     color: #555;
@@ -14,10 +13,39 @@
     margin-bottom: 5px;
     width: 30px;
     height: 30px;
-    transition: all .5s;
     background-color: var(--block-color);
+    transition: all .5s;
 }
-.icon:hover {
+.icon:hover, .icon:active  {
+    color: #17A9FD;
+    border: 1px solid #17A9FD;
+    box-shadow: 0px 0px 5px 1px #17A9FD;
+    transform: scale(105%);
+    transition: all .5s;
+}
+.technos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+}
+.techno {
+    color: #555;
+    border: 1px solid #aaa;
+    padding: 7px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 100px;
+    background-color: var(--block-color);
+    transition: all .5s;
+    text-align: center;
+}
+.techno:hover, .techno:active  {
     color: #17A9FD;
     border: 1px solid #17A9FD;
     box-shadow: 0px 0px 5px 1px #17A9FD;

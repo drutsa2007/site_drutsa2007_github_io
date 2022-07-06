@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    background-color: var(--rightmenu-color);
+    padding: 10px 8px 0 8px;
+    transition: background-color .5s;
+}
+.topicons {
+    flex-grow: 1;
+}
+.icon {
+    color: #ffffff;
+    display: block;
+    font-size: 20px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}

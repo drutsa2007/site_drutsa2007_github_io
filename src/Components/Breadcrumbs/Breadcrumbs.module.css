@@ -1,17 +1,9 @@
 .breadcrumbs {
     display: block;
-    margin: 10px 0 20px 0;
-}
-.breadcrumbs a{
-    color: var(--link-color);
-    text-decoration: none;
-}
-.breadcrumbs a:hover{
-    color: var(--link-color);
-    text-decoration: none;
+    margin: 0 0 20px 0;
 }
 .breadcrumbs a::after{
-    content: " / ";
+    content: " → ";
     color: var(--text-color);
 }
 .breadcrumbs a:last-child:after{
