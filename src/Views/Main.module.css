@@ -5,8 +5,8 @@
     flex-wrap: wrap;
 }
 .icon {
-    color: #555;
-    border: 1px solid #aaa;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     padding: 15px;
     border-radius: 4px;
     margin-right: 5px;
@@ -14,41 +14,39 @@
     width: 30px;
     height: 30px;
     background-color: var(--block-color);
-    transition: all .5s;
+    transition: all 1s;
 }
 .icon:hover, .icon:active  {
-    color: #17A9FD;
-    border: 1px solid #17A9FD;
-    box-shadow: 0px 0px 5px 1px #17A9FD;
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+    box-shadow: 0px 0px 5px 1px var(--link-color);
     transform: scale(105%);
-    transition: all .5s;
+    transition: all .2s;
 }
 .technos {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 15px;
-    padding-top: 20px;
-    border-top: 1px solid #555;
+    margin-bottom: 20px;
 }
 .techno {
-    color: #555;
-    border: 1px solid #aaa;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     padding: 7px 10px;
     border-radius: 4px;
     margin-right: 5px;
     margin-bottom: 5px;
     width: 100px;
     background-color: var(--block-color);
-    transition: all .5s;
     text-align: center;
+    transition: all 1s;
 }
 .techno:hover, .techno:active  {
-    color: #17A9FD;
-    border: 1px solid #17A9FD;
-    box-shadow: 0px 0px 5px 1px #17A9FD;
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+    box-shadow: 0px 0px 5px 1px var(--link-color);
     transform: scale(105%);
-    transition: all .5s;
+    transition: all .2s;
 }

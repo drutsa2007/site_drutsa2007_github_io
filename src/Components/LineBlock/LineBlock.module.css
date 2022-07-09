@@ -1,0 +1,26 @@
+.wrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.start {
+    width: 20px;
+    height: 1px;
+    background-color: var(--text-color);
+}
+.text {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: -2px;
+    color: #ec6c16;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    padding: 5px 10px;
+    width: 150px;
+}
+.end {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--text-color);
+}

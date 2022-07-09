@@ -1,5 +1,5 @@
 .command {
-    border: 1px solid #666;
+    border: 1px solid var(--text-color);
     border-radius: 4px;
     padding: 5px 10px;
     background-color: var(--block-color);

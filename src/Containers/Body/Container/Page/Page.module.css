@@ -1,4 +1,6 @@
 .page {
-    flex-grow: 2;
+    flex-grow: 1;
     padding: 10px;
+    min-width: 100%;
+    box-sizing: border-box;
 }

@@ -10,7 +10,7 @@ const Ngrok = () => {
       <Breadcrumbs/>
       <PageTitle>Информация</PageTitle>
       <ul>
-        <li>Зайти на <a href="https://ngrok.com/download" target="_blank">сайт</a> и скачать программу. </li>
+        <li>Зайти на <a href="https://ngrok.com/download" target="_blank" rel="noreferrer">сайт</a> и скачать программу. </li>
         <li>Распаковать в любую папку.</li>
         <li>Для получения токена, необходимо зарегистрироваться.</li>
         <li>Запускать из папки, в которую распаковали.</li>
@@ -33,8 +33,10 @@ const Ngrok = () => {
         )
       })}
       Дальше запускаете свой URL-адрес:<br/>
-      из пункта Forwarding<br/>
-      <b>https://ffff-999-999-999-999.pp.ngrok.io</b>
+      из пункта Forwarding:<br/><br/> https://ffff-999-999-999-999.pp.ngrok.io
+      <br/><br/>
+      Информация на сайте <a href="https://zen.yandex.ru/media/id/5f9ac31ac0a24c2787f6f456/ngrok-svoi-sait-v-internete-62c441b07286b12c3fce0a41" target="_blank" rel="noreferrer">сайте</a>
+
     </Body>
   );
 }

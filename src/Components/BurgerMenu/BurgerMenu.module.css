@@ -21,16 +21,17 @@
     left: 0;
     bottom: 0;
     height: 100%;
+    box-sizing: border-box;
     z-index: 21;
-    background-color: var(--block-color);
-    width: 250px; 
+    background-color: #555;
+    width: 280px; 
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     padding: 20px;
     padding-top: 15px;
-    animation: slideHome .5s ease-in-out;
+    animation: slideHome .8s ease-in-out;
 }
 
 @keyframes slideHome {
@@ -39,7 +40,7 @@
 }
 
 .menuActive {
-    animation: slideLeft .5s ease-in-out;
+    animation: slideLeft .8s ease-in-out;
 }
 
 @keyframes slideLeft {
