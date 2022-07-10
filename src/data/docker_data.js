@@ -11,6 +11,8 @@ const data = [
             ["docker image inspect IMAGE", "подробная информация об образе"],
             ["docker tag IMAGE LOGIN/IMAGE", "Создаст новый идентичный образ для заливки на docker hub."],
             ["docker push LOGIN/IMAGE:TAG", "Зальет образ на docker hub по никнейму."],
+            ["docker build --tag NAME:TAG .", "Создаст образ с тегом из текущей папки."],
+            ["docker build --tag NAME:TAG --no-cache .", "Создаст образ и переберт все слои из текущей папки."],
         ]
     },
     {
